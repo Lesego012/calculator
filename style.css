@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    min-height: height 100% !important;
+    width: 100%;
+
+}
+.container{
+    background-color:rgb(192, 27, 27);
+    padding:20px;
+    width: 15%;
+    margin-left: 40%;
+    margin-top: 10%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buttons input[type="button"]{
+    grid-column: 25% 25% 25% 25%;
+    border-radius: 40px;
+    width: 50px;
+}
