@@ -1,0 +1,57 @@
+<!Doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <nmeta name="viewpoint"
+    content="width=device-with, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\lesego.makhudu\Downloads\Projects\Web calculator\css\style.css">
+    <title>Calculator</title>
+    
+</head>
+
+<body style="background-color: black;">
+    
+    <div class="container">
+        <div class="buttons">
+            
+                <input type="text" id="check"><br><br>
+                <div id="output"></div><br>
+            
+                <!-- Buttons -->
+                <input type="button" value="%" onclick="lesego('%')">
+                <input type="button" value="*" onclick="lesego('*')">
+                <input type="button" value="+" onclick="lesego('+')"><br>
+                <input type="button" value="-" onclick="lesego('-')">
+                <input type="button" value="=" onclick="result()">
+                <input type="button" value="C" onclick="Remove()"><br>
+                <input type="button" value="7" onclick="lesego('7')">
+                <input type="button" value="8" onclick="lesego('8')">
+                <input type="button" value="9" onclick="lesego('9')"><br>
+                <input type="button" value="4" onclick="lesego('4')">
+                <input type="button" value="5" onclick="lesego('5')">
+                <input type="button" value="6" onclick="lesego('6')"><br>
+                <input type="button" value="1" onclick="lesego('1')">
+                <input type="button" value="2" onclick="lesego('2')">
+                <input type="button" value="3" onclick="lesego('3')"><br>
+                <input type="button" value="0" onclick="lesego('0')">
+                <input type="button" value="." onclick="lesego('.')">
+            
+                <script>
+                    function lesego(value) {
+                        document.getElementById("check").value+=value;
+                
+                        
+                    }
+                    function Remove(){
+                        document.getElementById("check").value='';
+                    }
+                    function result(){
+                        var lesego=document.getElementById("check").value;
+                        var result =eval(lesego)
+                        document.getElementById("check").value=result;
+                    }
+
+                </script>
+            </body>
+            </html>
